@@ -33,7 +33,7 @@ class NavBar extends React.Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/components/">SignIn </NavLink>
+                <NavLink onClick={this.props.logout}>Logout </NavLink>
               </NavItem>
             </Nav>
           </Collapse>

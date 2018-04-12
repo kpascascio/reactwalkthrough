@@ -26,7 +26,10 @@ class Login extends Component{
             })
         })
         .then(response => response.json())
-        .then( data => this.props.setToken() )
+        .then( data => {
+            console.log(data)
+            this.props.setToken(data.sessionToken)
+        } )
         //save our token - data.sessionToken
         //prevent default
 
